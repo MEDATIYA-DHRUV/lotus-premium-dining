@@ -393,14 +393,15 @@ export default function App() {
 
       {/* Hero Section (No Blinking Background Effect) */}
       <section id="home" className="relative min-h-[85vh] flex items-center justify-center overflow-hidden py-16 sm:py-24">
-        <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0B0E14] via-[#0B0E14]/80 to-[#0B0E14]/60 z-10" />
-          <img 
-            src="/public/images/buffet-setup.jpg" 
-            alt="Lotus Premium Dining Interior Ambience" 
-            className="w-full h-full object-cover object-center filter brightness-90"
-          />
-        </div>
+     <div className="absolute inset-0 z-0 overflow-hidden">
+  <div className="absolute inset-0 bg-gradient-to-t from-[#0B0E14] via-[#0B0E14]/80 to-[#0B0E14]/60 z-10" />
+  <img 
+    src="/public/images/buffet-setup.jpg" 
+    alt="Lotus Premium Dining Interior Ambience" 
+    className="w-full h-full object-cover object-center filter brightness-90 min-h-full"
+    loading="eager"
+  />
+</div>
 
         <div className="relative z-20 max-w-5xl mx-auto px-4 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs sm:text-sm font-medium mb-6 backdrop-blur-sm shadow-md">
@@ -874,7 +875,7 @@ export default function App() {
             <div className="md:col-span-5 space-y-4">
               <a href="#home" onClick={(e) => scrollToSection(e, 'home')} className="inline-block">
                 <img 
-                  src="/images/logo.png" 
+                  src="/images/logo.jpg" 
                   alt="Lotus Premium Dining Logo" 
                   className="h-12 w-auto object-contain"
                   onError={(e) => {
