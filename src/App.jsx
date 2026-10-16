@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+// Add this near the top of src/App.jsx alongside your icon imports
+import heroBgImage from './assets/hero-bg.jpg';
 import { 
   Phone, 
   MapPin, 
@@ -393,10 +395,11 @@ export default function App() {
 
       {/* Hero Section (No Blinking Background Effect) */}
       <section id="home" className="relative min-h-[85vh] flex items-center justify-center overflow-hidden py-16 sm:py-24">
-     <div className="absolute inset-0 z-0 overflow-hidden">
+{/* Hero Background Image */}
+<div className="absolute inset-0 z-0 overflow-hidden">
   <div className="absolute inset-0 bg-gradient-to-t from-[#0B0E14] via-[#0B0E14]/80 to-[#0B0E14]/60 z-10" />
   <img 
-    src="/public/images/buffet-setup.jpeg" 
+    src={heroBgImage} 
     alt="Lotus Premium Dining Interior Ambience" 
     className="w-full h-full object-cover object-center filter brightness-90 min-h-full"
     loading="eager"
