@@ -396,7 +396,7 @@ export default function App() {
      <div className="absolute inset-0 z-0 overflow-hidden">
   <div className="absolute inset-0 bg-gradient-to-t from-[#0B0E14] via-[#0B0E14]/80 to-[#0B0E14]/60 z-10" />
   <img 
-    src="/public/images/buffet-setup.jpg" 
+    src="/public/images/buffet-setup.jpeg" 
     alt="Lotus Premium Dining Interior Ambience" 
     className="w-full h-full object-cover object-center filter brightness-90 min-h-full"
     loading="eager"
